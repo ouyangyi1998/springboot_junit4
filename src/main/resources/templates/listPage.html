@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <table>
+        <thead>
+        <th>用户名称</th>
+        <th>年龄</th>
+        <th>创建时间</th>
+        </thead>
+        <tbody>
+        <tr th:if="${list!=null}" th:each="item:${list}">
+            <td th:text="${item.name}"></td>
+            <td th:text="${item.age}"></td>
+            <td th:text="${#dates.format(item.createDate,'yyyy-MM-dd')}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
