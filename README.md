@@ -19,7 +19,7 @@ junit4联动springboot，对于web开发进行测试
         mockMvc= MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
     }
  ```
- -通过perform发送请求(post,get),进行测试与返回json
+ - 通过perform发送请求(post,get),进行测试与返回json
  - mvcResult.getResponse().getStatus() 返回http状态码
  -  String resString=mvcResult.getResponse().getContentAsString() 返回json数据
  ```
