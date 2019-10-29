@@ -1,5 +1,6 @@
 # springboot_junit4
 junit4联动springboot，对于web开发进行测试
+- 代码来自github @jwwam 的入门代码，感谢
 - 需要spring.test junit包，前端页面采用thymeleaf进行渲染
 - thymeleaf的循环语法
 ```
